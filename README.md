@@ -72,7 +72,7 @@ A one-page interactive dashboard was created to visualize hospital patient data
 
 Dashboard Preview:
 
-> <img src="https://github.com/zktkcla/Hospital-Patient-Records/blob/main/Preview%20Dashboard.png">
+> <img src="https://github.com/zktkcla/Hospital-Patient-Records/blob/main/Dashbord%20Preview.png">
 
 ## 🛠️ Tools Used
 - Microsoft Excel:
