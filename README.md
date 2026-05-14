@@ -1,17 +1,19 @@
-# 🏥 Hospital-Patient-Records
+# 🏥 Hospital-Records-Analysis
 This project is a hospital patient records data analysis using Microsoft Excel with the aim of identifying patient encounter patterns, healthcare cost trends, and clinical insights that can assist in data-driven decision making.
 
 ## ✨ Project Goals
 Think of this as a Healthcare Analytics task. The Goals Are to:
 1. Measure total patient encounters and total healthcare costs across all records
-2. Know the average cost per encounter and average payer coverage rate
-3. Identify the most common encounter types based on frequency
-4. Determine the Top 10 most frequent diagnoses (Reason Descriptions)
-5. Analyze encounter trends over time to identify seasonal or periodic patterns
-6. Evaluate cost and encounter distributions based on:
+2. Identify the most common encounter types based on frequency
+3. Determine the Top 10 most frequent diagnoses (Reason Descriptions)
+4. Analyze encounter trends over time to identify seasonal or periodic patterns
+5. Evaluate cost and encounter distributions based on:
      - Encounter Class (ambulatory, emergency, inpatient, wellness, urgentcare)
-     - Payer / Insurance Provider
-7. Generate actionable healthcare insights that can be used to optimize hospital resource allocation and cost management strategies
+     - Date (Year, Month / Quarter)
+6. Generate actionable healthcare insights that can be used to optimize hospital resource allocation and revenue management strategies
+
+> **Note**: `TOTAL_CLAIM_COST` represents hospital revenue,
+> as it reflects the total amount billed to patients and payers.
 
 ## ❓ Business Questions
 ### 🔢 Encounter & Cost Performance
@@ -44,7 +46,6 @@ Think of this as a Healthcare Analytics task. The Goals Are to:
 - **Encounter Information**: `Id`, `START`, `STOP`, `ENCOUNTERCLASS`, `CODE`, `DESCRIPTION`, `BASE_ENCOUNTER_COST`, `TOTAL_CLAIM_COST`, `PAYER_COVERAGE`, `REASONCODE`, `REASONDESCRIPTION`
 - **Patient Information**: `Id`, `BIRTHDATE`, `DEATHDATE`, `GENDER`, `RACE`, `ETHNICITY`, `MARITAL`, `CITY`, `STATE`
 - **Procedure Information**: `ID_PROCEDURE`, `PROCEDURE_DESCRIPTION`, `START`, `STOP`
-- **Payer / Insurance**: `Id`, `Name`, `Address`, `Phone`
 
 ## 🧹 Data Cleaning and Preparation
 Cleaning was performed in Microsoft Excel:
@@ -65,13 +66,13 @@ A one-page interactive dashboard was created to visualize hospital patient data
       - Encounters by Class (ambulatory, emergency, inpatient, wellness, urgentcare)
       - Top 10 Most Frequent Diagnoses
       - Monthly Encounter Trend
-      - Cost Breakdown
+      - Total Hospital Revenue by Date (Year, Month / Quarter) 
   - Slicer for quick exploration
       - `ENCOUNTERCLASS`, `START`, `MONTH`
 
 Dashboard Preview:
 
-> `![Dashboard Preview](Hospital-Patient-Records-Dashboard.png)`
+> <img src="https://github.com/zktkcla/Hospital-Patient-Records/blob/main/Preview%20Dashboard.png">
 
 ## 🛠️ Tools Used
 - Microsoft Excel:
